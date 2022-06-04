@@ -1,0 +1,48 @@
+Pipeline {
+
+   agent any 
+       
+       stages {
+   
+          stage (build) {
+    
+             step {
+          
+              eco "building"
+
+              }
+       
+             } 
+
+             stage (test) {
+      
+              steps {
+              eco "testing"
+               }
+            
+              }
+   
+      
+             stage (deploy) {
+             
+                step {
+            
+                    eco "deploying"
+       
+                  }
+             
+                 }
+     
+               stage (monitor) {
+
+                  step {
+ 
+                   eco "monitoring"
+
+                   }
+ 
+                  }
+
+                }
+
+              }
